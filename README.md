@@ -6,3 +6,4 @@ npm install express
 
 para iniciar o servidor:
 node server
+É preciso reiniciar o servidor a cada mudança no código
