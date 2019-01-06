@@ -21,3 +21,8 @@ docker run --name mongodb -p 27017:27017 -d mongo
 Para verificar máquinas viruais rodando no docker:
 docker ps
 No meu caso, o SO não é adequado com a nova versão do Docker...
+Robo 3T é uma ferramenta interessante para visualizar informações com o MongoDB
+
+Adicionando uma dependência de produção para o MongoDB:
+npm install mongoose
+Mongoose é um ORM (object relation mapping) para bancos não relacionais
