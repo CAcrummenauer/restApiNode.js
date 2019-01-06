@@ -12,11 +12,11 @@ const productSchema = new mongoose.Schema({
     url: {
         type: String,
         required: true
-    }/*,
+    },
     createdAt: {
         type: Date,
-        default: Date.now()
-    }*/
+        default: Date.now,
+    },
 });
 
 mongoose.model('Product', productSchema);

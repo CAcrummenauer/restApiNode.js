@@ -7,23 +7,16 @@ const app = express();
 
 // Iniciando o BD
 mongoose.connect(
-    'mongodb://localhost:27017/nodeapi', 
+    "mongodb://localhost:27017/nodeapi", 
     {useNewUrlParser: true}
 );
 
 // Registrar modelos aunomaticamente (require-dir) na aplicação:
 requireDir('./src/models');
 
-const product = mongoose.model('Product');
+// const product = mongoose.model('Product');
 
-// Criação da primeira rota
-app.get('/', (req, res) => {
-    product.create({
-        title: 'React native',
-        description: 'Build native apps with React',
-        url: 'http://github.com/facebook/react-native'
-    });
-    return res.send('Hello CezarAC');
-});
+// Rotas
+app.use('/api', require('./src/routes'));
 
 app.listen(3001);
