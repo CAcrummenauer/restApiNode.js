@@ -26,3 +26,6 @@ Robo 3T é uma ferramenta interessante para visualizar informações com o Mongo
 Adicionando uma dependência de produção para o MongoDB:
 npm install mongoose
 Mongoose é um ORM (object relation mapping) para bancos não relacionais
+
+Para importar de forma automática, usar:
+npm install require-dir
