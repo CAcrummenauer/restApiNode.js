@@ -13,5 +13,9 @@ module.exports = {
     async store(req, res) {
         const productInsert = await product.create(req.body);
         return res.json(productInsert);
+    },
+    async update(req, res) {
+        const productUpdate = await product.findByIdAndUpdate(req.params.id, req.body, {new: true});
+        return res.json(productUpdate);
     }
 }
