@@ -32,3 +32,6 @@ npm install require-dir
 
 Para fazer a paginação de informações:
 npm install mongoose-paginate
+
+Para permitir acessos de outros domínios: 
+npm install cors
