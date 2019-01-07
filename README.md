@@ -29,3 +29,6 @@ Mongoose é um ORM (object relation mapping) para bancos não relacionais
 
 Para importar de forma automática, usar:
 npm install require-dir
+
+Para fazer a paginação de informações:
+npm install mongoose-paginate
