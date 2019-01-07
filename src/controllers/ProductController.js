@@ -17,5 +17,9 @@ module.exports = {
     async update(req, res) {
         const productUpdate = await product.findByIdAndUpdate(req.params.id, req.body, {new: true});
         return res.json(productUpdate);
+    },
+    async destroy(req, res) {
+        await product.findByIdAndRemove(req.params.id);
+        return res.send();
     }
 }
